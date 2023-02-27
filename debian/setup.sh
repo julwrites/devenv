@@ -21,5 +21,3 @@ cargo install bacon cargo-info
 # Check if Debian
 cargo install nu
 
-# Check if Darwin
-brew install nushell
