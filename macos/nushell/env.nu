@@ -49,6 +49,7 @@ let-env ENV_CONVERSIONS = {
 # By default, <nushell-config-dir>/scripts is added
 let-env NU_LIB_DIRS = [
     ($nu.config-path | path dirname | path join 'scripts')
+    ($nu.config-path | path dirname | path join $"($env.HOME)/julwrites/devenv/nu_scripts/virtual_environments/")
 ]
 
 # Directories to search for plugin binaries when calling register
@@ -66,3 +67,5 @@ let-env PATH = ($env.PATH | split row (char esep) | append '/usr/local/Cellar/')
 let-env PATH = ($env.PATH | split row (char esep) | append '/usr/local/Homebrew/bin')
 let-env PATH = ($env.PATH | split row (char esep) | append $"($env.HOME)/.cargo/bin/")
 let-env PATH = ($env.PATH | split row (char esep) | append $"($env.HOME)/.local/share/bob/nvim-bin")
+
+export alias cat = bat

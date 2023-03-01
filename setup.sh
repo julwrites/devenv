@@ -7,15 +7,16 @@ cargo install sccache
 # Generic use
 cargo install nu bat exa du-dust speedtest-rs coreutils
 
+sudo ln -s ~/.cargo/bin/nu /usr/local/bin/nu
+
 # Generic dev
 cargo install gitui rtx-cli mprocs
+
+# Rust dev tools
+cargo install bacon cargo-info
 
 # Neovim
 cargo install bob-nvim
 bob install v0.8.3
 cargo install neovide ripgrep
 
-# Rust dev tools
-cargo install bacon cargo-info
-
-sudo ln -s ~/.cargo/bin/nu /usr/local/bin/nu
