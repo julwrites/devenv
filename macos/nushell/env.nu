@@ -69,3 +69,4 @@ let-env PATH = ($env.PATH | split row (char esep) | append $"($env.HOME)/.cargo/
 let-env PATH = ($env.PATH | split row (char esep) | append $"($env.HOME)/.local/share/bob/nvim-bin")
 
 export alias cat = bat
+export alias speedtest = speedtest-rs
